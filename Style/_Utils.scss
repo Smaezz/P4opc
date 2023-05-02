@@ -1,0 +1,14 @@
+/***Variables,fonctions, mixins ***/
+
+$violet: #9356DC;
+$bleuf : #003A68;
+$bleuc : #89c8fa;
+$vertf : #008766;
+$vertc : #99e2d0;
+$saumon : #fcc0ce;
+
+
+    @mixin title-font {
+        display: flex;
+        align-items: center;
+    }

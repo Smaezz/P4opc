@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "name": "c",
+  "version": "1.0.0",
+  "description": "Sass P4opc",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./Style/style.scss:./Style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smaezz/P4opc.git"
+  },
+  "author": "Sma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smaezz/P4opc/issues"
+  },
+  "homepage": "https://github.com/Smaezz/P4opc#readme"
+}
