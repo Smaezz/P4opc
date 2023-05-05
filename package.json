@@ -8,7 +8,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "sass": "sass --watch ./Style/style.scss:./Style/style.css"
+    "sass": "sass --watch ./sass/style.scss:style.css"
   },
   "repository": {
     "type": "git",

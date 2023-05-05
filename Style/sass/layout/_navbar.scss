@@ -1,0 +1,13 @@
+.filtres {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.choix {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+

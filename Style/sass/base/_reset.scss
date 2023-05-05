@@ -1,0 +1,72 @@
+.header__title {
+    font-family: "Shrikhand";
+  }
+
+  h1 {
+    font-weight: 400;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .search {
+    box-shadow: inset 0 10px 10px -10px grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    gap: 15px;
+    padding-left: 30px;
+    background-color: #EAEAEA;
+    width: 100%;
+    height: 50px;
+  }
+
+  i.fa-sharp {
+    display: flex;
+    align-self: center;
+    width: 12px;
+    height: 16px;
+    padding-left: 60px;
+    color: #353535;
+  }
+
+  .search__input {
+    border: 0px;
+    background-color: #EAEAEA;
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2rem;
+    background-color: #F7F7F7;
+   }
+
+    .reserver {
+        display: flex;
+        font-weight: 700;
+        font-size: 24px;
+        padding-top: 2rem;
+        width: 70%;
+        justify-content: center;
+    }
+
+    .decouvrez {
+        width: 70%;
+        padding-bottom: 1rem;
+    }
+    
+    .fonctionnement {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+    }
