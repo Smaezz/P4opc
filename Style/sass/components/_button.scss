@@ -7,6 +7,13 @@ button {
     height: 50px;
     border:none;
     box-shadow: 0px 5px 5px rgb(194, 192, 192);
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+button:hover {
+        transform: scale(1.02);
+        opacity: 0.8;
 }
 
 .grey-btn {
@@ -25,6 +32,6 @@ button {
 .text {
     @include text-center;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
 }
 

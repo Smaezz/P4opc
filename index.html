@@ -15,7 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <title>OhMyFood</title>
     <link rel="stylesheet" href="Style/style.css">
-    
+
+<body>
 <header>
     <div class="fleche"></div>
     <div class="header__title"><h1>ohmyfood</h1></div>
@@ -33,10 +34,10 @@
     </section>
 
     <section class="fonctionnement">
-        <h2>Fonctionnement</h2>
+        <h2 class="fonct-title">Fonctionnement</h2>
         <div class="filtres">
             <div class="choix">
-                <div class="number">1</div>
+                <div class="number"><p>1</p></div>
                 <div class="grey-btn">
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <p class="text">Choisissez un restaurant</p>
@@ -45,14 +46,14 @@
             <div class="choix">
                 <div class="number">2</div>
                 <div class="grey-btn">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <i class="fa-solid fa-list-ul"></i>
                     <p class="text">Composez votre menu</p>
                 </div>
             </div>
             <div class="choix">
                 <div class="number">3</div>
                 <div class="grey-btn">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <i class="fa-solid fa-store"></i>
                     <p class="text">Dégustez au restaurant</p>
                 </div>
             </div>
@@ -63,45 +64,51 @@
         <h2 class="section-title">Restaurants</h2>
             
         
-        <div class="populaires-cards">
+        <div class="restaurants-cards">
             <article class="card">
-                <img class="card-img" src="./images/hebergements/emile-guillemot.jpg"
-                    alt="Image de la chambre d'hôtel montrant un lit">
+                <div class="card-img"><img class="card-img" src="./restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    alt="Assiette de crudités fines">
+                    <div class="nouveau">Nouveau</div></div>
                 <div class="card-content">
                     <div class="card-txt">
                         <h3 class="card-title">La palette du goût</h3>
-                        <p class="card-subtitle">Ménilmontant<span class="euro">€</span></p>
+                        <p class="card-subtitle">Ménilmontant</p>
                     </div>
-                </div>
+                    <i class="fa-regular fa-heart" tabindex="0"></i>
             </article>
             <article class="card">
-                <img class="card-img" src="./images/hebergements/emile-guillemot.jpg"
+                <div class="card-img"><img class="card-img" src="./restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                     alt="Image de la chambre d'hôtel montrant un lit">
+                    <div class="nouveau">Nouveau</div></div>
                 <div class="card-content">
                     <div class="card-txt">
                         <h3 class="card-title">La note enchanté</h3>
-                        <p class="card-subtitle">Charonne<span class="euro">€</span></p>
+                        <p class="card-subtitle">Charonne</p>
                     </div>
+                    
+                    <i class="fa-regular fa-heart"></i>
                 </div>
             </article>
             <article class="card">
-                <img class="card-img" src="./images/hebergements/emile-guillemot.jpg"
+                <img class="card-img" src="./restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                     alt="Image de la chambre d'hôtel montrant un lit">
                 <div class="card-content">
                     <div class="card-txt">
                         <h3 class="card-title">À la française</h3>
-                        <p class="card-subtitle">Cité Rouge<span class="euro">€</span></p>
+                        <p class="card-subtitle">Cité Rouge</p>
                     </div>
+                    <i class="fa-regular fa-heart"></i>
                 </div>
             </article>
             <article class="card">
-                <img class="card-img" src="./images/hebergements/emile-guillemot.jpg"
+                <img class="card-img" src="./restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                     alt="Image de la chambre d'hôtel montrant un lit">
                 <div class="card-content">
                     <div class="card-txt">
                         <h3 class="card-title">Le délice des sens</h3>
-                        <p class="card-subtitle">Folie-Méricourt<span class="euro">€</span></p>
+                        <p class="card-subtitle">Folie-Méricourt</p>
                     </div>
+                    <i class="fa-regular fa-heart"></i>
                 </div>
             </article>
         </div>
@@ -109,7 +116,7 @@
 </main>
 
 <footer>
-    <H2>OhMyFood</H2>
+    <h2 class="foot-title">ohmyfood</h2>
     <ul>
         <li>Proposer un restaurant</li>
         <li>Devenir partenaire</li>
@@ -118,3 +125,4 @@
     </ul>
 
 </footer>
+</body>

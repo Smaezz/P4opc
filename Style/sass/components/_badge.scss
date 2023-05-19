@@ -3,6 +3,31 @@
     align-items: center;
 }
 
+.icon-heart {
+    width: 100%;
+}
+
+.fa-heart {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding-right: 3rem;
+    cursor: pointer;
+}
+
+.fa-heart:focus {
+    color: violet;
+}
+
+.custom-checkbox input[type="checkbox"]:checked~.checked {
+    display: inline-block;
+  }
+  .custom-checkbox input[type="checkbox"]:checked~.unchecked {
+    display: none;
+  }
+
 .number {
     display: flex;
     align-items: center;
@@ -14,3 +39,15 @@
     color: white;
     position: absolute;
 }
+       
+.nouveau {
+    position: absolute;
+    height: 2rem;
+    width: 5rem;
+    background-color: #99e2d0;
+    color: #1b6150;
+    display: grid;
+    place-items: center;
+    right: 1rem;
+    top: 1rem;
+  }

@@ -1,4 +1,12 @@
 
 .restaurants {
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
+}
+
+.restaurants-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }

@@ -1,4 +1,21 @@
 footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
     color: white;
     background-color: #353535;
+        li {
+        list-style: none;
+        }
+}
+
+.foot-title {
+    display: flex;
+    font-family: "Shrikhand";
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+ul {
+    padding: 0;
 }
