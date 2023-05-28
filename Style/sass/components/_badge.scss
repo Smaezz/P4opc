@@ -3,30 +3,65 @@
     align-items: center;
 }
 
+.fa-store {
+    color: #9356DC;
+}
+
 .icon-heart {
     width: 100%;
 }
 
-.fa-heart {
+.coeur {
+    width: 20px;
+    height: 20px;
+}
+
+    .far {
+    position: absolute;
+    right: 0rem;
+    padding-top: 30px;
     display: flex;
     color: black;
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    padding-right: 3rem;
+    padding-right: 2rem;
     cursor: pointer;
-}
+    }
 
-.fa-heart:focus {
+.coeur2 {
+    width: 20px;
+    height: 20px;
+    margin-right: 2rem;
+}
+    
+.fas {
+    position: relative;
+    display: flex;
     color: violet;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 21px;
+    padding-right: 2rem;
+    padding-top: 30px;
+    cursor: pointer;
+    opacity: 0;
+    }
+
+.fas:hover {
+    opacity: 1;
 }
 
-.custom-checkbox input[type="checkbox"]:checked~.checked {
-    display: inline-block;
-  }
-  .custom-checkbox input[type="checkbox"]:checked~.unchecked {
-    display: none;
-  }
+.fa-arrow-left {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: start;
+    align-items: start;
+    left: 2rem;
+    top: 3rem;
+    font-size: 22px;
+}
 
 .number {
     display: flex;

@@ -18,22 +18,23 @@
 
 <body>
 <header>
-    <i class="fa-regular fa-arrow-left"></i>
+    <i class="fa fa-arrow-left"></i>
     <div class="header__title"><h1>ohmyfood</h1></div>
 </header>
 
-<main>
-    <section class="photoentête">
-        <img src="./restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-        
+
+    <section class="photoentête border-radius">
+        <img src="./restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">   
     </section>
 
     
+<main class="main-pal">
+    <div class="restaurants">
+        <div class="row"><h2 class="section-title header__title font-weight400">La palette du goût</h2>
+        <i class="fa-regular fa-heart"></i></div>
 
-    <section class="restaurants">
-        <h2 class="section-title header__title">La palette du goût</h2>
-
-        <h4 class="souligne">ENTRÉES</h4>
+        <h4 class="margin-bottom font-weight100">ENTRÉES</h4>
+        <div class="souligne"></div><br>
     
         <div class="restaurants-cards">
             <article class="card box-shadow">
@@ -48,7 +49,7 @@
             <article class="card box-shadow">
                 <div class="card-content">
                     <div class="card-txt">
-                        <h3 class="card-title">Foie gras de canrd mi-cuit</h3>
+                        <h3 class="card-title">Foie gras de canard mi-cuit</h3>
                         <p class="card-subtitle">Et ses copeaux de truffe noire</p>
                     </div>
                         <p>35€</p>
@@ -64,8 +65,9 @@
                 </div>
             </article>
         </div>
-        <h4 class="souligne">PLATS</h4>
-    
+
+        <h4 class="margin-bottom margin-top font-weight100">PLATS</h4>
+        <div class="souligne"></div><br>
         <div class="restaurants-cards">
             <article class="card box-shadow">
                 <div class="card-content">
@@ -95,7 +97,8 @@
                 </div>
             </article>
         </div>
-        <h4 class="souligne">DESSERTS</h4>
+        <h4 class="margin-bottom margin-top font-weight100">DESSERTS</h4>
+        <div class="souligne"></div><br>
     
         <div class="restaurants-cards">
             <article class="card box-shadow">
@@ -126,10 +129,11 @@
                 </div>
             </article>
         </div>
-    </section>
+    </div>
+    <div class="commander"><button>Commander</button></div>
 </main>
 
-<footer>
+<footer class="footer-pal">
     <h2 class="foot-title">ohmyfood</h2>
     <ul>
         <li>Proposer un restaurant</li>

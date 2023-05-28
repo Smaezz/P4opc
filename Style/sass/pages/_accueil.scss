@@ -1,12 +1,33 @@
 
-.restaurants {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-}
 
-.restaurants-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+
+/*Version desktop*/
+@media (min-width: 1023.98px)
+                {
+    .filtres {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .restaurants-cards {
+      display: flex;
+      flex-direction: row;
+    }
+
+        .ligne1desktop {
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .ligne2desktop {
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            flex-direction: row-reverse;
+            justify-content: end;
+        }
 }

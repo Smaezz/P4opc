@@ -17,5 +17,28 @@ footer {
 }
 
 ul {
+    display: flex;
+    flex-direction: column;
     padding: 0;
+    gap: 0.5rem;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}
+
+.utensils {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.handshake {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.fa-handshake-angle {
+    font-size: 14px;
 }

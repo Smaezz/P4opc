@@ -1,3 +1,7 @@
+html {
+  margin: 0;
+}
+
 .header__title {
     font-family: "Shrikhand";
   }
@@ -46,7 +50,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     background-color: #F7F7F7;
    }
 
@@ -70,12 +74,13 @@
         justify-content: space-between;
         height: auto;
         background-color: white;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
     }
 
     .fonct-title {
         padding-left: 1rem;
+        margin-bottom: 0;
     }
 
     
