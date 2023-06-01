@@ -34,7 +34,7 @@
     </section>
 
     <section class="fonctionnement">
-        <h2 class="fonct-title">Fonctionnement</h2>
+        <div class="debackground"><h2 class="fonct-title">Fonctionnement</h2>
         <div class="filtres">
             <div class="choix">
                 <div class="number"><p>1</p></div>
@@ -58,6 +58,7 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
     <section class="restaurants">
@@ -75,8 +76,11 @@
                         <h3 class="card-title">La palette du goût</h3>
                         <p class="card-subtitle">Ménilmontant</p>
                     </div>
-                    <div class="coeur"><i class="far fa-heart"></i></div>
-                    <div class="coeur2"><i class="fas fa-heart"></i></div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <i class="far coeur fa-heart unchecked"></i>
+                        <i class="fas coeur2 fa-heart checked"></i>
+                    </label>
                 </div>
             </article>
             <article class="card">
@@ -88,8 +92,11 @@
                         <h3 class="card-title">La note enchanté</h3>
                         <p class="card-subtitle">Charonne</p>
                     </div>
-                    <div class="coeur"><i class="far fa-heart"></i></div>
-                    <div class="coeur2"><i class="fas fa-heart"></i></div>   
+                    <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <i class="far coeur fa-heart unchecked"></i>
+                        <i class="fas coeur2 fa-heart checked"></i>
+                    </label>   
                 </div>
             </article></div>
             <div class="ligne2desktop">
@@ -101,8 +108,11 @@
                         <h3 class="card-title">À la française</h3>
                         <p class="card-subtitle">Cité Rouge</p>
                     </div>
-                    <div class="coeur"><i class="far fa-heart"></i></div>
-                    <div class="coeur2"><i class="fas fa-heart"></i></div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <i class="far coeur fa-heart unchecked"></i>
+                        <i class="fas coeur2 fa-heart checked"></i>
+                    </label>
                 </div>
             </article>
             <article class="card">
@@ -113,8 +123,11 @@
                         <h3 class="card-title">Le délice des sens</h3>
                         <p class="card-subtitle">Folie-Méricourt</p>
                     </div>
-                    <div class="coeur"><i class="far fa-heart"></i></div>
-                    <div class="coeur2"><i class="fas fa-heart"></i></div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <i class="far coeur fa-heart unchecked"></i>
+                        <i class="fas coeur2 fa-heart checked"></i>
+                    </label>
                 </div>
             </article></div>
         </div>
@@ -124,10 +137,10 @@
 <footer>
     <h2 class="foot-title">ohmyfood</h2>
     <ul>
-        <li><div class="utensils"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</div></li>
-        <li><div class="handshake"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</div></li>
-        <li>Mentions légales</li>
-        <li>Contact</li>
+        <li><div class="utensils"><i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a></div></li>
+        <li><div class="handshake"><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></div></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Contact</a></li>
     </ul>
 </footer>
 </body>

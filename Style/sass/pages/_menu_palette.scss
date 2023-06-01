@@ -1,12 +1,42 @@
 
+.loader {
+    border: 8px solid red;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    background: #99EDD0;
+    width: 10%;
+    height: 10%;
+    animation-duration: 3s;
+    animation: spin 2s linear;
+    margin: auto;
+    position: absolute;
+    z-index: 5;
+}
+
+@keyframes spin {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
 
 .photoentête {
-    height: 275px;
+    z-index: 1;
+    height: 383px;
+    margin-bottom: -3rem;
     img {
         object-fit: cover;
         height: 100%;
         width: 100%;
     }
+}
+
+.backwhite {
+    background: white;
+}
+
+.centre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .souligne {
@@ -33,29 +63,97 @@
     font-weight: 100;
 }
 
-.border-radius {
-    border-radius: 0 0 25px 25px;
-}
-
 .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 634px;
 }
 
 .main-pal {
     background-color: #F6F6F6;
-    position: absolute;
-    margin-top: -2rem;
-    border-radius: 25px 25px 0 0;
+    position: relative;
+    z-index: 3;
+    border-radius: 40px 40px 0 0;
     width: 100%;
+    max-width: 1054px;
     height: 100%;
-    margin-bottom: 10rem;
+    margin: 0 auto;
+}
+
+/* ajustement coeur pour la page */
+.ajust {
+    right: 48px;
+}
+
+.ajust2 {
+    padding-right: 0px;
+}
+
+.prix {
+    display: flex;
+    align-items: end;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+    background: white;
+    border-radius: 0 15px 15px 0;
+    margin-left:0;
 }
 
 .footer-pal {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 80rem;
+}
+
+/*animation tiroir selection*/
+
+.slide-left-checkbox {
+        background-color: #99EDD0;
+        position: absolute;
+        border-radius: 0 15px 15px 0;
+        top:0;
+        right: 0;
+        width: 100px;
+        height: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease; /* Transition de l'animation */
+  }
+  
+.card-content:hover .slide-left-checkbox {
+        transform: translateX(0); /* Animation de translation */
+  }
+
+.card-content:hover .prix {
+    transform: translateX(-220%); /* Animation de translation */
+}
+
+.fa-circle {
+    display: flex;
+    font-size: 16px;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    overflow: hidden;
+}
+  
+/*Version desktop*/
+@media (min-width: 1023.98px)
+                {
+.row {
+    justify-content: center;
+}
+
+.restaurant {
+    justify-content: center;
+}
+
+.font-weight100 {
+    padding-left: 12rem;
+}
+
+.souligne {
+    margin-left: 12rem;
+}
 }

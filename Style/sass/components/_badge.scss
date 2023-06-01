@@ -7,6 +7,21 @@
     color: #9356DC;
 }
 
+.custom-checkbox input[type="checkbox"],
+            .custom-checkbox .checked {
+            display: none;
+        }
+ 
+        .custom-checkbox input[type="checkbox"]:checked ~ .checked
+        {
+            display: inline-block;
+        }
+ 
+        .custom-checkbox input[type="checkbox"]:checked ~ .unchecked
+        {
+            display: none;
+        }
+
 .icon-heart {
     width: 100%;
 }
@@ -17,15 +32,14 @@
 }
 
     .far {
-    position: absolute;
-    right: 0rem;
-    padding-top: 30px;
+    position: relative;
+    right: 3rem;
     display: flex;
     color: black;
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    padding-right: 2rem;
+    padding-top: 40px;
     cursor: pointer;
     }
 
@@ -45,12 +59,7 @@
     padding-right: 2rem;
     padding-top: 30px;
     cursor: pointer;
-    opacity: 0;
     }
-
-.fas:hover {
-    opacity: 1;
-}
 
 .fa-arrow-left {
     display: flex;
@@ -61,6 +70,15 @@
     left: 2rem;
     top: 3rem;
     font-size: 22px;
+}
+
+.fa-circle-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
 }
 
 .number {

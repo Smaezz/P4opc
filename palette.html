@@ -16,52 +16,71 @@
         <title>OhMyFood</title>
     <link rel="stylesheet" href="Style/style.css">
 
-<body>
+    
+<body class="backwhite">
+    <div class="loader">
+    </div>
 <header>
     <i class="fa fa-arrow-left"></i>
     <div class="header__title"><h1>ohmyfood</h1></div>
 </header>
 
 
-    <section class="photoentête border-radius">
+    <section class="photoentête">
         <img src="./restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">   
     </section>
 
     
 <main class="main-pal">
+    <section class="centre">
     <div class="restaurants">
         <div class="row"><h2 class="section-title header__title font-weight400">La palette du goût</h2>
-        <i class="fa-regular fa-heart"></i></div>
+            <label class="custom-checkbox">
+                <input type="checkbox" />
+                <i class="far coeur ajust fa-heart unchecked"></i>
+                <i class="fas coeur2 ajust2 fa-heart checked"></i>
+            </label>
+    </div>
 
         <h4 class="margin-bottom font-weight100">ENTRÉES</h4>
         <div class="souligne"></div><br>
     
         <div class="restaurants-cards">
-            <article class="card box-shadow">
+            <article class="card box-shadow tiroir">
                 <div class="card-content">
                     <div class="card-txt">
                         <h3 class="card-title">Fricassée d"escargots</h3>
                         <p class="card-subtitle">Au piment d'Espelette</p>
                     </div>
-                        <p>25€</p>
-                </div>
+                    <div class="prix">25€</div> 
+                    <div class="slide-left-checkbox">
+                        <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+                    </div> 
+                </div> 
             </article>
-            <article class="card box-shadow">
+
+            <article class="card box-shadow tiroir">
                 <div class="card-content">
                     <div class="card-txt">
                         <h3 class="card-title">Foie gras de canard mi-cuit</h3>
                         <p class="card-subtitle">Et ses copeaux de truffe noire</p>
                     </div>
-                        <p>35€</p>
+                    <div class="prix">35€</div>
+                    <div class="slide-left-checkbox">
+                        <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+                    </div>
                 </div>
             </article>
-            <article class="card box-shadow">
+            <article class="card box-shadow tiroir">
                 <div class="card-content">
                     <div class="card-txt">
                         <h3 class="card-title">Oeuf au plat</h3>
                         <p class="card-subtitle">Assaisonné à la truffe sur lit de caviar</p>
                     </div>
-                    <p>20€</p>
+                    <div class="prix">20€</div>
+                    <div class="slide-left-checkbox">
+                        <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+                    </div>
                 </div>
             </article>
         </div>
@@ -69,31 +88,40 @@
         <h4 class="margin-bottom margin-top font-weight100">PLATS</h4>
         <div class="souligne"></div><br>
         <div class="restaurants-cards">
-            <article class="card box-shadow">
+            <article class="card box-shadow tiroir">
                 <div class="card-content">
                     <div class="card-txt">
                         <h3 class="card-title">Filet de boeuf aux herbes</h3>
                         <p class="card-subtitle">Accompagné de sa ribanbelle de légumes</p>
                     </div>
-                        <p>40€</p>
+                    <div class="prix">40€</div>
+                    <div class="slide-left-checkbox">
+                        <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+                    </div>
                 </div>
             </article>
-            <article class="card box-shadow">
+            <article class="card box-shadow tiroir">
                 <div class="card-content">
                     <div class="card-txt">
                         <h3 class="card-title">Parmentier de queue de boeuf</h3>
                         <p class="card-subtitle">À la truffe noire sur sa purée de panais</p>
                     </div>
-                        <p>35€</p>
+                    <div class="prix">35€</div>
+                    <div class="slide-left-checkbox">
+                        <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+                    </div>
                 </div>
             </article>
-            <article class="card box-shadow">
+            <article class="card box-shadow tiroir">
                 <div class="card-content">
                     <div class="card-txt">
                         <h3 class="card-title">Filet de turbot</h3>
                         <p class="card-subtitle">Aux agrumes</p>
                     </div>
-                    <p>44€</p>
+                    <div class="prix">44€</div>
+                    <div class="slide-left-checkbox">
+                        <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+                    </div>
                 </div>
             </article>
         </div>
@@ -101,45 +129,55 @@
         <div class="souligne"></div><br>
     
         <div class="restaurants-cards">
-            <article class="card box-shadow">
+            <article class="card box-shadow tiroir">
                 <div class="card-content">
                     <div class="card-txt">
                         <h3 class="card-title">Paris-Brest</h3>
                         <p class="card-subtitle">Revisité</p>
                     </div>
-                        <p>18€</p>
+                    <div class="prix">18€</div>
+                    <div class="slide-left-checkbox">
+                        <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+                    </div>
                 </div>
             </article>
-            <article class="card box-shadow">
+            <article class="card box-shadow tiroir">
                 <div class="card-content">
                     <div class="card-txt">
                         <h3 class="card-title">Macaron au chocolat d'exception</h3>
                         <p class="card-subtitle">Et glace à la vanille de Madagascar</p>
                     </div>
-                        <p>22€</p>
+                    <div class="prix">22€</div>
+                    <div class="slide-left-checkbox">
+                        <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+                    </div>
                 </div>
             </article>
-            <article class="card box-shadow">
+            <article class="card box-shadow tiroir">
                 <div class="card-content">
                     <div class="card-txt">
                         <h3 class="card-title">Mousse au chocolat d'exception</h3>
                         <p class="card-subtitle">Au piment d'Espelette et à la truffe noire</p>
                     </div>
-                    <p>23€</p>
+                    <div class="prix">23€</div>
+                    <div class="slide-left-checkbox">
+                        <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+                    </div>
                 </div>
             </article>
         </div>
     </div>
+    </section>
     <div class="commander"><button>Commander</button></div>
 </main>
 
 <footer class="footer-pal">
     <h2 class="foot-title">ohmyfood</h2>
     <ul>
-        <li>Proposer un restaurant</li>
-        <li>Devenir partenaire</li>
-        <li>Mentions légales</li>
-        <li>Contact</li>
+        <li><div class="utensils"><i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a></div></li>
+        <li><div class="handshake"><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></div></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Contact</a></li>
     </ul>
 
 </footer>
