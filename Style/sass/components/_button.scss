@@ -27,6 +27,12 @@ button:hover {
     padding-left: 40px;
     gap: 2rem;
     margin-left: 13px;
+    cursor: pointer;
+}
+
+.grey-btn:hover {
+    transform: scale(1.02);
+    opacity: 0.8;
 }
 
 .text {
@@ -42,4 +48,5 @@ button:hover {
     justify-content: center;
     padding-bottom: 2rem;
 }
+
 

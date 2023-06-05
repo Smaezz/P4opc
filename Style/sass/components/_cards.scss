@@ -22,8 +22,8 @@
     background-color: white;
     position: relative;
     justify-content: space-between;
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
     .card-img {
@@ -54,23 +54,29 @@
     width: 100%;
     height: 100%;
     gap: 5px;
+    color: black;
 }
 
 .card-title {
-    display: flex;
+    display: block;
     white-space: nowrap;
     padding-bottom: 0;
     margin-bottom: 0;
     text-overflow: ellipsis;
-    
+    font-size: 18px;
+    min-width: 200px;
+    overflow: hidden;
 }
 
 .card-subtitle {
-    display: flex;
+    min-width: 200px;
+    display: block;
     white-space: nowrap;
     margin: 0px;
     padding-bottom: 1rem;
     text-overflow: ellipsis;
+    font-size: 15px;
+    overflow:hidden
 }
 
 .box-shadow {
@@ -94,13 +100,31 @@
 }
 
 .tiroir {
+    display: flex;
+    flex-direction: column;
     width: 0;
     height: 100%;
-    transition: height 0.5s ease; /* Transition de l'animation */
+    animation: fillFromRight 3s ease-in-out forwards/* Transition de l'animation */
+}
+
+.tiroir2 {
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    height: 100%;
+    animation: fillFromRight 3s ease-in-out 0.5s forwards/* Transition de l'animation */
+}
+
+.tiroir3 {
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    height: 100%;
+    animation: fillFromRight 3s ease-in-out 1s forwards/* Transition de l'animation */
 }
 
 /* Animation de l'ouverture des tiroirs */
-@keyframes slideIn {
+@keyframes fillFromRight {
     0% {
       width: 0;
     }
@@ -110,14 +134,4 @@
   }
   
   /* Ajouter des délais d'animation pour chaque tiroir */
-  .tiroir:nth-child(1) {
-    animation: slideIn 0.5s ease 0.2s forwards;
-  }
   
-  .tiroir:nth-child(2) {
-    animation: slideIn 0.5s ease 0.4s forwards;
-  }
-  
-  .tiroir:nth-child(3) {
-    animation: slideIn 0.5s ease 0.6s forwards;
-  }

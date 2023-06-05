@@ -83,14 +83,30 @@ i.fa-sharp {
 
 .custom-checkbox input[type="checkbox"],
 .custom-checkbox .checked {
-  display: none; }
+  display: none;
+  width: 20px;
+  height: 20px; }
 
 .custom-checkbox input[type="checkbox"]:checked ~ .checked {
-  display: inline-block; }
+  display: inline-block;
+  width: 20px;
+  height: 20px; }
 
 .custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
-  display: none; }
+  display: none;
+  width: 20px;
+  height: 20px; }
 
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  padding-right: 3rem; }
+
+@keyframes fillFromRight {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
 .icon-heart {
   width: 100%; }
 
@@ -99,14 +115,14 @@ i.fa-sharp {
   height: 20px; }
 
 .far {
-  position: relative;
-  right: 3rem;
+  /*position: relative;*/
+  padding-right: 64px;
   display: flex;
   color: black;
   justify-content: space-between;
   align-items: center;
   font-size: 20px;
-  padding-top: 40px;
+  padding-top: 42px;
   cursor: pointer; }
 
 .coeur2 {
@@ -115,14 +131,15 @@ i.fa-sharp {
   margin-right: 2rem; }
 
 .fas {
-  position: relative;
+  /*position: absolute;*/
   display: flex;
   color: violet;
   justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 21px;
   padding-right: 2rem;
-  padding-top: 30px;
+  padding-top: 32px;
   cursor: pointer; }
 
 .fa-arrow-left {
@@ -133,7 +150,9 @@ i.fa-sharp {
   align-items: start;
   left: 2rem;
   top: 3rem;
-  font-size: 22px; }
+  font-size: 22px;
+  color: black;
+  cursor: pointer; }
 
 .fa-circle-check {
   display: flex;
@@ -191,7 +210,12 @@ button:hover {
   height: 72px;
   padding-left: 40px;
   gap: 2rem;
-  margin-left: 13px; }
+  margin-left: 13px;
+  cursor: pointer; }
+
+.grey-btn:hover {
+  transform: scale(1.02);
+  opacity: 0.8; }
 
 .text {
   display: flex;
@@ -227,8 +251,8 @@ button:hover {
   background-color: white;
   position: relative;
   justify-content: space-between;
-  width: 100%;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 .card-img {
   object-fit: cover;
@@ -254,21 +278,28 @@ button:hover {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  gap: 5px; }
+  gap: 5px;
+  color: black; }
 
 .card-title {
-  display: flex;
+  display: block;
   white-space: nowrap;
   padding-bottom: 0;
   margin-bottom: 0;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  font-size: 18px;
+  min-width: 200px;
+  overflow: hidden; }
 
 .card-subtitle {
-  display: flex;
+  min-width: 200px;
+  display: block;
   white-space: nowrap;
   margin: 0px;
   padding-bottom: 1rem;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  font-size: 15px;
+  overflow: hidden; }
 
 .box-shadow {
   box-shadow: 0px 4px 15px 5px #d4d1d1; }
@@ -288,27 +319,33 @@ button:hover {
   flex-wrap: wrap; }
 
 .tiroir {
+  display: flex;
+  flex-direction: column;
   width: 0;
   height: 100%;
-  transition: height 0.5s ease;
-  /* Transition de l'animation */ }
+  animation: fillFromRight 3s ease-in-out forwards; }
+
+.tiroir2 {
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  height: 100%;
+  animation: fillFromRight 3s ease-in-out 0.5s forwards; }
+
+.tiroir3 {
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  height: 100%;
+  animation: fillFromRight 3s ease-in-out 1s forwards; }
 
 /* Animation de l'ouverture des tiroirs */
-@keyframes slideIn {
+@keyframes fillFromRight {
   0% {
     width: 0; }
   100% {
     width: 100%; } }
 /* Ajouter des délais d'animation pour chaque tiroir */
-.tiroir:nth-child(1) {
-  animation: slideIn 0.5s ease 0.2s forwards; }
-
-.tiroir:nth-child(2) {
-  animation: slideIn 0.5s ease 0.4s forwards; }
-
-.tiroir:nth-child(3) {
-  animation: slideIn 0.5s ease 0.6s forwards; }
-
 body {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
@@ -384,6 +421,40 @@ header {
   width: 100%;
   padding: 20px; }
 
+.divloader {
+  background: #e0d9d9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: fadeOut 1s ease-out 3s forwards;
+  z-index: 1001; }
+
+.loader {
+  border: 8px solid #99EDD0;
+  border-top: 8px solid #3498db;
+  border-radius: 100%;
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: 100px;
+  height: 100px;
+  animation: spin 4s linear infinite, fadeOut 1s forwards ease-out 3s;
+  /*margin: 0 auto;*/
+  position: absolute;
+  top: 46%;
+  left: 46%;
+  z-index: 1002; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible; }
+  to {
+    opacity: 0;
+    visibility: hidden; } }
 /*Version desktop*/
 @media (min-width: 1023.98px) {
   .fonctionnement {
@@ -452,24 +523,6 @@ body {
   align-self: center;
   width: 100%; }
 
-.loader {
-  border: 8px solid red;
-  border-top: 8px solid #3498db;
-  border-radius: 50%;
-  background: #99EDD0;
-  width: 10%;
-  height: 10%;
-  animation-duration: 3s;
-  animation: spin 2s linear;
-  margin: auto;
-  position: absolute;
-  z-index: 5; }
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
 .photoentête {
   z-index: 1;
   height: 383px;
@@ -501,7 +554,8 @@ body {
   margin-top: 3rem; }
 
 .font-weight400 {
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 28px; }
 
 .font-weight100 {
   font-weight: 100; }
@@ -509,8 +563,7 @@ body {
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  max-width: 634px; }
+  justify-content: space-between; }
 
 .main-pal {
   background-color: #F6F6F6;
@@ -576,7 +629,10 @@ body {
 /*Version desktop*/
 @media (min-width: 1023.98px) {
   .row {
-    justify-content: center; }
+    justify-content: center;
+    max-width: 634px;
+    margin: 0 auto;
+    gap: 3rem; }
 
   .restaurant {
     justify-content: center; }
@@ -585,6 +641,10 @@ body {
     padding-left: 12rem; }
 
   .souligne {
-    margin-left: 12rem; } }
+    margin-left: 12rem; }
+
+  .gap {
+    gap: 1rem;
+    /*ajustement menus*/ } }
 
 /*# sourceMappingURL=style.css.map */

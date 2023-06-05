@@ -1,22 +1,4 @@
 
-.loader {
-    border: 8px solid red;
-    border-top: 8px solid #3498db;
-    border-radius: 50%;
-    background: #99EDD0;
-    width: 10%;
-    height: 10%;
-    animation-duration: 3s;
-    animation: spin 2s linear;
-    margin: auto;
-    position: absolute;
-    z-index: 5;
-}
-
-@keyframes spin {
-    0% {transform:rotate(0deg);}
-    100% {transform:rotate(360deg);}
-}
 
 .photoentête {
     z-index: 1;
@@ -57,6 +39,7 @@
 
 .font-weight400 {
     font-weight: 400;
+    font-size: 28px;
 }
 
 .font-weight100 {
@@ -67,7 +50,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 634px;
 }
 
 .main-pal {
@@ -143,6 +125,9 @@
                 {
 .row {
     justify-content: center;
+    max-width: 634px;
+    margin: 0 auto;
+    gap: 3rem;
 }
 
 .restaurant {
@@ -155,5 +140,9 @@
 
 .souligne {
     margin-left: 12rem;
+}
+
+.gap {
+    gap: 1rem; /*ajustement menus*/
 }
 }
