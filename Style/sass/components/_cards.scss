@@ -55,6 +55,7 @@
     height: 100%;
     gap: 5px;
     color: black;
+    overflow: hidden;
 }
 
 .card-title {
@@ -64,12 +65,10 @@
     margin-bottom: 0;
     text-overflow: ellipsis;
     font-size: 18px;
-    min-width: 200px;
     overflow: hidden;
 }
 
 .card-subtitle {
-    min-width: 200px;
     display: block;
     white-space: nowrap;
     margin: 0px;
@@ -97,6 +96,7 @@
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .tiroir {
@@ -104,7 +104,7 @@
     flex-direction: column;
     width: 0;
     height: 100%;
-    animation: fillFromRight 3s ease-in-out forwards/* Transition de l'animation */
+    animation: fillFromRight 3s ease-in-out forwards; /* Transition de l'animation */
 }
 
 .tiroir2 {
@@ -112,7 +112,7 @@
     flex-direction: column;
     width: 0;
     height: 100%;
-    animation: fillFromRight 3s ease-in-out 0.5s forwards/* Transition de l'animation */
+    animation: fillFromRight 3s ease-in-out 0.5s forwards; /* Transition de l'animation */
 }
 
 .tiroir3 {
@@ -120,7 +120,7 @@
     flex-direction: column;
     width: 0;
     height: 100%;
-    animation: fillFromRight 3s ease-in-out 1s forwards/* Transition de l'animation */
+    animation: fillFromRight 3s ease-in-out 1s forwards; /* Transition de l'animation */
 }
 
 /* Animation de l'ouverture des tiroirs */
