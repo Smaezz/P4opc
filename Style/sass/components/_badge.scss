@@ -3,10 +3,6 @@
     align-items: center;
 }
 
-.fa-store {
-    color: #9356DC;
-}
-
 .custom-checkbox input[type="checkbox"],
             .custom-checkbox .checked {
             display: none;
@@ -19,6 +15,7 @@
             display: inline-block;
             width: 20px;
             height: 20px;
+            transition: height 2s ease-in-out;
         }
  
         .custom-checkbox input[type="checkbox"]:checked ~ .unchecked
@@ -26,12 +23,14 @@
             display: none;
             width: 20px;
             height: 20px;
+            transition: height 2s ease-in-out;
         }
 
         .custom-checkbox {
             width: 20px;
             height: 20px;
             padding-right: 3rem;
+            transition: height 2s ease-in-out;
         }
 
         @keyframes fillFromRight {
@@ -41,11 +40,13 @@
 
 .icon-heart {
     width: 100%;
+    transition: height 2s ease-in-out;
 }
 
 .coeur {
     width: 20px;
     height: 20px;
+    transition: height 2s ease-in-out;
 }
 
     .far {
@@ -58,12 +59,14 @@
     font-size: 20px;
     padding-top: 42px;
     cursor: pointer;
+    transition: height 2ss ease-in-out;
     }
 
 .coeur2 {
     width: 20px;
     height: 20px;
     margin-right: 2rem;
+    transition: height 2s ease-in-out;
 }
     
 .fas {
@@ -77,6 +80,7 @@
     padding-right: 2rem;
     padding-top: 32px;
     cursor: pointer;
+    transition: height 2s ease-in-out;
     }
 
 .fa-arrow-left {
