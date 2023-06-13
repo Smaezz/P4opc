@@ -15,7 +15,6 @@
             display: inline-block;
             width: 20px;
             height: 20px;
-            transition: height 2s ease-in-out;
         }
  
         .custom-checkbox input[type="checkbox"]:checked ~ .unchecked
@@ -23,14 +22,12 @@
             display: none;
             width: 20px;
             height: 20px;
-            transition: height 2s ease-in-out;
         }
 
         .custom-checkbox {
             width: 20px;
             height: 20px;
             padding-right: 3rem;
-            transition: height 2s ease-in-out;
         }
 
         @keyframes fillFromRight {

@@ -103,14 +103,18 @@
         height: 100%;
   }
 
-.card-content:hover {/*transform: translateX(100%);
-    transition: transform 0.5s ease; /* Transition de l'animation */
+.card-content:hover { 
     .slide-left-checkbox {
         width: 100px;
         overflow: hidden;
-        /*position: relative;*/
-        animation: fillFromLeft 0.5s ease-in-out ;
+        animation: fillFromLeft 0.5s ease-in-out;        
+        }
 }
+
+.card-content:not(:hover) .slide-left-checkbox {
+    transition: width 0.5s ease-in-out, 0.5s;
+    width: 0;
+    right: 100px;
 }
 
   @keyframes fillFromLeft {
@@ -119,18 +123,8 @@
     }
     100% {
       width: 100px;
-    }
+    } 
   }
-
-  
-/*.card-content:hover .slide-left-checkbox {
-        transform: translateX(0); /* Animation de translation 
-  }*/
-
-/*.card-content:hover .prix {
-    transform: translateX(-220%); /* Animation de translation 
-
-}*/
 
 .fa-circle {
     display: flex;
