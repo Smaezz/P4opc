@@ -79,6 +79,7 @@ i.fa-sharp {
   background-color: white;
   padding-top: 1rem;
   padding-bottom: 3rem;
+  width: 100%;
 }
 
 .fonct-title {
@@ -102,21 +103,18 @@ i.fa-sharp {
   display: inline-block;
   width: 20px;
   height: 20px;
-  transition: height 2s ease-in-out;
 }
 
 .custom-checkbox input[type=checkbox]:checked ~ .unchecked {
   display: none;
   width: 20px;
   height: 20px;
-  transition: height 2s ease-in-out;
 }
 
 .custom-checkbox {
   width: 20px;
   height: 20px;
   padding-right: 3rem;
-  transition: height 2s ease-in-out;
 }
 
 @keyframes fillFromRight {
@@ -148,7 +146,7 @@ i.fa-sharp {
   font-size: 20px;
   padding-top: 42px;
   cursor: pointer;
-  transition: height 2ss ease-in-out;
+  transition: height 2s ease-in-out;
 }
 
 .coeur2 {
@@ -265,7 +263,7 @@ i.fa-sharp {
   align-items: center;
   font-weight: 600;
   font-size: 16px;
-  margin-left: auto;
+  margin-left: 15%;
   margin-right: auto;
 }
 
@@ -541,6 +539,19 @@ header {
     visibility: hidden;
   }
 }
+/*Version tablette*/
+@media (min-width: 550px) {
+  .debackground {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .restaurants {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 550px;
+  }
+}
 /*Version desktop*/
 @media (min-width: 1023.98px) {
   .fonctionnement {
@@ -716,13 +727,16 @@ body {
   height: 100%;
 }
 
-.card-content:hover { /*transform: translateX(100%);
-transition: transform 0.5s ease; /* Transition de l'animation */ }
 .card-content:hover .slide-left-checkbox {
   width: 100px;
   overflow: hidden;
-  /*position: relative;*/
   animation: fillFromLeft 0.5s ease-in-out;
+}
+
+.card-content:not(:hover) .slide-left-checkbox {
+  transition: width 0.5s ease-in-out, 0.5s;
+  width: 0;
+  right: 100px;
 }
 
 @keyframes fillFromLeft {
@@ -733,13 +747,6 @@ transition: transform 0.5s ease; /* Transition de l'animation */ }
     width: 100px;
   }
 }
-/*.card-content:hover .slide-left-checkbox {
-        transform: translateX(0); /* Animation de translation 
-  }*/
-/*.card-content:hover .prix {
-    transform: translateX(-220%); /* Animation de translation 
-
-}*/
 .fa-circle {
   display: flex;
   font-size: 16px;
