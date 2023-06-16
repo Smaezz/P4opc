@@ -88,8 +88,7 @@ i.fa-sharp {
 .custom-checkbox input[type="checkbox"]:checked ~ .checked {
   display: inline-block;
   width: 20px;
-  height: 20px;
-  transform: 2s; }
+  height: 20px; }
 
 .custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
   display: none;
@@ -117,8 +116,7 @@ i.fa-sharp {
   align-items: center;
   font-size: 20px;
   padding-top: 42px;
-  cursor: pointer;
-  transform: opacity 0; }
+  cursor: pointer; }
 
 .coeur2 {
   width: 20px;
