@@ -42,10 +42,11 @@
 
 .text {
     @include text-center;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     margin-left: 15%;
     margin-right: auto;
+    padding-right: 2rem;
 }
 
 .commander {

@@ -75,7 +75,10 @@
     padding-bottom: 1rem;
     text-overflow: ellipsis;
     font-size: 15px;
-    overflow:hidden
+    overflow:hidden;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: left;
 }
 
 .box-shadow {
@@ -88,6 +91,7 @@
     padding: 1rem;
     padding-bottom: 2rem;
     width: 100%;
+    max-width: 1080px;
 }
 
 .restaurants-cards {
@@ -133,5 +137,4 @@
     }
   }
   
-  /* Ajouter des délais d'animation pour chaque tiroir */
   

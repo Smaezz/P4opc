@@ -15,7 +15,6 @@
   width: 100px;
   height: 100px;
   animation: spin 4s linear infinite, fadeOut 1s forwards ease-out 3s; 
-  /*margin: 0 auto;*/
   position: absolute;
   top: 46%;
   left: 46%;
@@ -60,6 +59,9 @@
 
     .fonctionnement {
       margin: 0 auto;
+      padding-left: 80px;
+      padding-right: 80px;
+      max-width: 1250px;
     }
     
     .debackground {
@@ -70,6 +72,8 @@
         max-width: 1250px;
         margin: 0 auto;
         padding-bottom: 2rem;
+        padding-left: 95px;
+        padding-right: 95px;
     }
 
     .filtres {

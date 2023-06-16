@@ -88,34 +88,28 @@ i.fa-sharp {
 .custom-checkbox input[type="checkbox"]:checked ~ .checked {
   display: inline-block;
   width: 20px;
-  height: 20px; }
+  height: 20px;
+  transform: 2s; }
 
 .custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
   display: none;
   width: 20px;
-  height: 20px; }
+  height: 20px;
+  transition: 1s; }
 
 .custom-checkbox {
   width: 20px;
   height: 20px;
   padding-right: 3rem; }
 
-@keyframes fillFromRight {
-  0% {
-    width: 0; }
-  100% {
-    width: 100%; } }
 .icon-heart {
-  width: 100%;
-  transition: height 2s ease-in-out; }
+  width: 100%; }
 
 .coeur {
   width: 20px;
-  height: 20px;
-  transition: height 2s ease-in-out; }
+  height: 20px; }
 
 .far {
-  /*position: relative;*/
   padding-right: 64px;
   display: flex;
   color: black;
@@ -124,16 +118,14 @@ i.fa-sharp {
   font-size: 20px;
   padding-top: 42px;
   cursor: pointer;
-  transition: height 2s ease-in-out; }
+  transform: opacity 0; }
 
 .coeur2 {
   width: 20px;
   height: 20px;
-  margin-right: 2rem;
-  transition: height 2s ease-in-out; }
+  margin-right: 2rem; }
 
 .fas {
-  /*position: absolute;*/
   display: flex;
   color: violet;
   justify-content: space-between;
@@ -142,8 +134,7 @@ i.fa-sharp {
   font-size: 21px;
   padding-right: 2rem;
   padding-top: 32px;
-  cursor: pointer;
-  transition: height 2s ease-in-out; }
+  cursor: pointer; }
 
 .fa-arrow-left {
   display: flex;
@@ -227,10 +218,11 @@ i.fa-sharp {
 .text {
   display: flex;
   align-items: center;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   margin-left: 15%;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-right: 2rem; }
 
 .commander {
   position: relative;
@@ -307,7 +299,10 @@ i.fa-sharp {
   padding-bottom: 1rem;
   text-overflow: ellipsis;
   font-size: 15px;
-  overflow: hidden; }
+  overflow: hidden;
+  font-weight: 300;
+  line-height: 14px;
+  text-align: left; }
 
 .box-shadow {
   box-shadow: 0px 4px 15px 5px #d4d1d1; }
@@ -317,7 +312,8 @@ i.fa-sharp {
   flex-direction: column;
   padding: 1rem;
   padding-bottom: 2rem;
-  width: 100%; }
+  width: 100%;
+  max-width: 1080px; }
 
 .restaurants-cards {
   display: flex;
@@ -357,7 +353,6 @@ i.fa-sharp {
     width: 0; }
   100% {
     width: 100%; } }
-/* Ajouter des délais d'animation pour chaque tiroir */
 body {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
@@ -449,7 +444,6 @@ header {
   width: 100px;
   height: 100px;
   animation: spin 4s linear infinite, fadeOut 1s forwards ease-out 3s;
-  /*margin: 0 auto;*/
   position: absolute;
   top: 46%;
   left: 46%;
@@ -481,7 +475,10 @@ header {
 /*Version desktop*/
 @media (min-width: 1023.98px) {
   .fonctionnement {
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    max-width: 1250px; }
 
   .debackground {
     max-width: 1250px; }
@@ -489,7 +486,9 @@ header {
   .restaurants {
     max-width: 1250px;
     margin: 0 auto;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    padding-left: 95px;
+    padding-right: 95px; }
 
   .filtres {
     display: flex;
@@ -568,7 +567,8 @@ body {
   border-bottom: 3px solid #99EDD0;
   width: 40px;
   padding-top: 0;
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: -7px; }
 
 .margin-bottom {
   margin-bottom: 5px; }
@@ -666,10 +666,10 @@ body {
     justify-content: center; }
 
   .font-weight100 {
-    padding-left: 12rem; }
+    padding-left: 112px; }
 
   .souligne {
-    margin-left: 12rem; }
+    margin-left: 112px; }
 
   .gap {
     gap: 1rem;

@@ -103,12 +103,14 @@ i.fa-sharp {
   display: inline-block;
   width: 20px;
   height: 20px;
+  transform: 2s;
 }
 
 .custom-checkbox input[type=checkbox]:checked ~ .unchecked {
   display: none;
   width: 20px;
   height: 20px;
+  transition: 1s;
 }
 
 .custom-checkbox {
@@ -117,27 +119,16 @@ i.fa-sharp {
   padding-right: 3rem;
 }
 
-@keyframes fillFromRight {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
 .icon-heart {
   width: 100%;
-  transition: height 2s ease-in-out;
 }
 
 .coeur {
   width: 20px;
   height: 20px;
-  transition: height 2s ease-in-out;
 }
 
 .far {
-  /*position: relative;*/
   padding-right: 64px;
   display: flex;
   color: black;
@@ -146,18 +137,16 @@ i.fa-sharp {
   font-size: 20px;
   padding-top: 42px;
   cursor: pointer;
-  transition: height 2s ease-in-out;
+  transform: opacity 0;
 }
 
 .coeur2 {
   width: 20px;
   height: 20px;
   margin-right: 2rem;
-  transition: height 2s ease-in-out;
 }
 
 .fas {
-  /*position: absolute;*/
   display: flex;
   color: violet;
   justify-content: space-between;
@@ -167,7 +156,6 @@ i.fa-sharp {
   padding-right: 2rem;
   padding-top: 32px;
   cursor: pointer;
-  transition: height 2s ease-in-out;
 }
 
 .fa-arrow-left {
@@ -352,6 +340,10 @@ i.fa-sharp {
   text-overflow: ellipsis;
   font-size: 15px;
   overflow: hidden;
+  font-weight: 100;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .box-shadow {
@@ -364,6 +356,7 @@ i.fa-sharp {
   padding: 1rem;
   padding-bottom: 2rem;
   width: 100%;
+  max-width: 1080px;
 }
 
 .restaurants-cards {
@@ -514,7 +507,6 @@ header {
   width: 100px;
   height: 100px;
   animation: spin 4s linear infinite, fadeOut 1s forwards ease-out 3s;
-  /*margin: 0 auto;*/
   position: absolute;
   top: 46%;
   left: 46%;
@@ -652,6 +644,7 @@ body {
   width: 40px;
   padding-top: 0;
   margin-top: 0;
+  margin-bottom: -6px;
 }
 
 .margin-bottom {
