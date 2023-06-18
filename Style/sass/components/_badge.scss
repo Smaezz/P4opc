@@ -3,70 +3,58 @@
     align-items: center;
 }
 
-.custom-checkbox input[type="checkbox"],
-            .custom-checkbox .checked {
-            display: none;
+
+    .checkbox {
+            display: flex;
             width: 20px;
             height: 20px;
-        }
- 
-        .custom-checkbox input[type="checkbox"]:checked ~ .checked
-        {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-        }
- 
-        .custom-checkbox input[type="checkbox"]:checked ~ .unchecked
-        {
-            display: none;
-            width: 20px;
-            height: 20px;
-            transition: 1s;
+            position: absolute;
+            bottom: 13px;
+            right: 15px;
         }
 
-        .custom-checkbox {
-            width: 20px;
-            height: 20px;
-            padding-right: 3rem;
-        }
-
-.icon-heart {
-    width: 100%;
-}
-
-.coeur {
-    width: 20px;
-    height: 20px;
-}
+    .checkboxMenu {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        padding-right: 45px;
+    }
 
     .far {
-    padding-right: 64px;
     display: flex;
     color: black;
-    justify-content: space-between;
-    align-items: center;
+    width: 20px;
+    height: 20px;
     font-size: 20px;
-    padding-top: 42px;
     cursor: pointer;
     }
 
-.coeur2 {
-    width: 20px;
-    height: 20px;
-    margin-right: 2rem;
-}
-    
 .fas {
     display: flex;
-    color: violet;
-    justify-content: space-between;
-    justify-content: center;
+    width: 21px;
+    height: 20px;
+    background-image: linear-gradient(#FF79DA,#9356DC);
     align-items: center;
     font-size: 21px;
-    padding-right: 2rem;
-    padding-top: 32px;
     cursor: pointer;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    }
+
+    .fas:hover {
+        opacity: 1;   
+        color: transparent;
+        background-image: linear-gradient(#FF79DA,#9356DC);
+        -webkit-background-clip: text; 
+    }
+
+    .fas:not(:hover) {
+        transition: opacity 1s ease-in-out;
+        opacity: 0;   
+        color: transparent;
+        background-image: linear-gradient(#FF79DA,#9356DC);
+        -webkit-background-clip: text; 
     }
 
 .fa-arrow-left {
